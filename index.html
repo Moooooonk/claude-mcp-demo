@@ -4,35 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub MCP Demo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .container {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-top: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        code {
-            background-color: #f5f5f5;
-            padding: 2px 5px;
-            border-radius: 3px;
-        }
-        pre {
-            background-color: #f5f5f5;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>GitHub MCP (Multiple Committer Push) 데모</h1>
@@ -46,6 +18,38 @@
     <div class="container">
         <h2>MCP 사용 방법</h2>
         <p>이 데모 저장소는 GitHub MCP 기능을 설명하기 위해 만들어졌습니다.</p>
+        <p>아래는 MCP를 사용하는 기본적인 방법입니다:</p>
+        <pre><code>
+# 저장소 복제
+git clone https://github.com/Moooooonk/claude-mcp-demo.git
+
+# 변경 사항 작업
+# 파일 수정...
+
+# 변경 사항 추가
+git add .
+
+# 커밋 작성
+git commit -m "변경 사항에 대한 설명"
+
+# 변경 사항을 원격 저장소로 푸시
+git push origin main
+        </code></pre>
     </div>
+
+    <div class="container">
+        <h2>여러 사용자의 커밋 확인하기</h2>
+        <p>이 저장소는 여러 사용자의 커밋을 포함하고 있습니다:</p>
+        <ul>
+            <li>초기 <code>index.html</code> 파일 생성 - Moooooonk</li>
+            <li><code>style.css</code> 파일 추가 - Claude</li>
+            <li><code>index.html</code> 파일 업데이트 - Claude</li>
+        </ul>
+        <p>이렇게 여러 사용자의 커밋이 하나의 저장소에 통합되어 관리됩니다.</p>
+    </div>
+
+    <footer>
+        © 2025 GitHub MCP Demo | Created by Moooooonk & Claude
+    </footer>
 </body>
 </html>
