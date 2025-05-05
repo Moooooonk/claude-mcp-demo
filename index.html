@@ -44,12 +44,34 @@ git push origin main
             <li>초기 <code>index.html</code> 파일 생성 - Moooooonk</li>
             <li><code>style.css</code> 파일 추가 - Claude</li>
             <li><code>index.html</code> 파일 업데이트 - Claude</li>
+            <li><code>script.js</code> 파일 추가 - Moooooonk</li>
         </ul>
         <p>이렇게 여러 사용자의 커밋이 하나의 저장소에 통합되어 관리됩니다.</p>
+    </div>
+
+    <div class="container">
+        <h2>커밋 히스토리</h2>
+        <p>이 저장소의 커밋 히스토리를 실시간으로 확인해 보세요:</p>
+        <div id="commit-history" class="commit-history">
+            <p>커밋 히스토리 로딩 중...</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>GitHub MCP를 사용하는 방법</h2>
+        <ol>
+            <li><strong>저장소 설정</strong>: GitHub 저장소에서 Settings > Collaborators 메뉴로 이동하여 협업자를 추가합니다.</li>
+            <li><strong>권한 설정</strong>: 협업자에게 적절한 권한을 부여합니다(Read, Write, Admin 등).</li>
+            <li><strong>브랜치 전략 수립</strong>: 팀 내에서 어떤 브랜치 전략을 사용할지 결정합니다(예: GitHub Flow, Git Flow 등).</li>
+            <li><strong>협업 작업</strong>: 각 팀원은 저장소를 복제하고, 변경 사항을 푸시하여 협업을 진행합니다.</li>
+            <li><strong>충돌 해결</strong>: 충돌이 발생하면 팀원들이 함께 충돌을 해결하고 변경 사항을 병합합니다.</li>
+        </ol>
     </div>
 
     <footer>
         © 2025 GitHub MCP Demo | Created by Moooooonk & Claude
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
